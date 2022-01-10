@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Operations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Top Fastest Cars</h1>
+<form action="javascript:void(0);" onsubmit="addCar()"> 
+  <input type="text" id="AddName" placeholder="Add new Car">
+  <input type="submit" value="Add">
+</form>
+
+<div id="EditForm">
+  <form action="javascript:void(0);" id="SaveEdit">
+    <input type="text" id="EditName">
+    <input type="submit" value="Edit" /> <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+  </form>
+</div>
+
+<p id="counter"></p>
+
+<table>
+  <tr>
+    <th id="name">Car names:</th>
+  </tr>
+    <tbody id="Cars">
+    </tbody>
+</table>
+
+<script src="myscript.JS"></script>
+</body>
+</html>
